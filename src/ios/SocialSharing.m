@@ -595,7 +595,7 @@ static NSString *const kShareOptionIPadCoordinates = @"iPadCoordinates";
 
 //  NSData *imageObj = [NSData dataFromBase64String:objectAtIndex0];
   NSString *tmpDir = NSTemporaryDirectory();
-  NSString *path = [tmpDir stringByAppendingPathComponent:@"instagram.igo"];
+  NSString *path = [tmpDir stringByAppendingPathComponent:@"instagram.ig"];
   [UIImageJPEGRepresentation(image, 1.0) writeToFile:path atomically:YES];
 
   _documentInteractionController = [UIDocumentInteractionController interactionControllerWithURL:[NSURL fileURLWithPath:path]];
